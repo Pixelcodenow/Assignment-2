@@ -13,18 +13,23 @@
 <body class="quicksand-font">
     <header>
         <nav class="navbar display-flex">
-            <div class="nav-logo display-flex">
-                <img src="assets/logo.png" alt="">
-                <h1 class="navlogobarh1">SCHOOL</h1>
-            </div>  
-          <ul class="navbar-list display-flex">
-                      <!-- li.nav-item*4>a.nav-link -->
-        <li class="nav-item "><a href="#" class="nav-link li-home">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link li-about">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link li-facilities">Facilities</a></li>
-        <li class="nav-item"><a href="#" class="nav-link li-admission">Admission</a></li>
-          </ul>
-        <button class="btn-orange">Contact</button>
+<div style="width: 100%; display: flex ; justify-content: space-between;">
+    <div class="nav-logo display-flex">
+        <img src="assets/logo.png" alt="">
+        <h1 class="navlogobarh1">SCHOOL</h1>
+    </div>  
+  <ul class="navbar-list display-flex">
+              <!-- li.nav-item*4>a.nav-link -->
+<li class="nav-item "><a href="#" class="nav-link li-home">Home</a></li>
+<li class="nav-item"><a href="#" class="nav-link li-about">About</a></li>
+<li class="nav-item"><a href="#" class="nav-link li-facilities">Facilities</a></li>
+<li class="nav-item"><a href="#" class="nav-link li-admission">Admission</a></li>
+  </ul>
+<button class="btn-orange">Contact</button>
+<span class="material-symbols-outlined menu">
+    menu
+    </span>
+</div>
         </nav>
         <div class="banner display-flex">
             <div class="banner-content">
@@ -38,7 +43,7 @@
     </header>
     <main>
         <section class="section-1" style="background-image: url(assets/bg.png);">
-            <div style="row-gap: 80px;">
+            <div class="sectiondiv" style="row-gap: 80px;">
                 <div>
                     <h1 class="container-1-h1">Standard Curriculum</h1>
                 </div>
@@ -102,7 +107,7 @@
                 <!-- div>(div>img+button+h3+p)*3 -->
                 <div class="box">
                     <div class="f1fr">
-                        <div class="stories">
+                        <div class="stories  box1spec">
                             <div><img src="assets/story-1.png" alt=""></div>
 
                             <time>November 19, 2019</time>
@@ -149,13 +154,13 @@
         </section>
     </main>
     <footer class="foot">
-        <div style="display: flex; justify-content: space-evenly;">
+        <div class="foot-con" >
             <div class="fot-1">
                 <div class="foter-logo display-flex">
                   <img src="assets/logo.png" alt="">
                   <h2 style="color: white;">Kids Education</h2>
                 </div>
-                <p style="color: white;">Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple Aussie. Mayo rib sauce Hawaiian meatball.</p>
+                <p style="color: white;">Pizza ipsum dolor meat lovers buffalo. <br> Deep dolor roll melted bacon Bianca pan <br> bacon pineapple Aussie. Mayo rib sauce <br> Hawaiian meatball.</p>
               </div>
       
               <div class="fot-2">
@@ -171,18 +176,19 @@
                       </div>
                   </div>
               </div>
+              <div class="fot-3">
+
+                <h3 style="color: white;">Keep In Touch</h3>
+                <ul>
+                    <li><img src="assets/fb.png" alt=""></li>
+                    <li><img src="assets/dribble.png" alt=""></li>
+                    <li><img src="assets/twitter.png" alt=""></li>
+                    <li><img src="assets/google+.png" alt=""></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="fot-3">
-
-            <h3 style="color: white;">Keep In Touch</h3>
-            <ul>
-                <li><img src="assets/fb.png" alt=""></li>
-                <li><img src="assets/dribble.png" alt=""></li>
-                <li><img src="assets/twitter.png" alt=""></li>
-                <li><img src="assets/google+.png" alt=""></li>
-            </ul>
-        </div>
+ 
     </footer>
 
 </body>

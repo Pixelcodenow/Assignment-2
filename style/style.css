@@ -38,11 +38,19 @@
 .navbar{
     justify-content: space-between;
     align-items: center;
-    margin: 20px 140px;
+    margin: 1.25rem 8.75rem;
+    
     gap: 11.6rem;
-}
+    /* overflow: hidden; */
+   }
 
+   .navvbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    }
 .nav-logo{
+    display: flex;
     gap: 10px;
     align-items: center;
 }
@@ -53,7 +61,9 @@
 
 .nav-item{
     list-style: none;
-    margin-left: 30px;
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 .nav-link{
     text-decoration: none;
@@ -63,7 +73,9 @@
 .li-facilities{color: #05D4DF; font-weight: medium; font-size: 1.25rem;}
 .li-admission{color: #5D58EF; font-weight: medium; font-size: 1.25rem;}
 
-
+.menu{
+    display: none;
+}
 /* banner style  */
 .banner{
     justify-content: space-between;
@@ -108,19 +120,24 @@
 .container-1-data-table{
     margin: 80px 140px;
     gap: 30px;
+    justify-content: center;
     
 }
 .list1{
     /* display: flex; */
-    display: grid;
-
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(222, 245, 255, 1);
     background-color: #ffffff;
 
-    justify-content: center;
-    align-items: center;
+    width: 370px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    gap: 50px;
 }
 
 /* .arrow-button{
@@ -215,13 +232,14 @@
 /* footer styles */
 
 .foot{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     background-color: #01ACFD ;
     gap: 5rem;
     padding: 120px 140px 175px 140px;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between;
+    align-items: center; */
+
 }
 .footer-logo{
    color: white;
@@ -262,4 +280,100 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.foot-con{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px;
+    padding: 20px; 
+}
+
+
+
+
+/*  responsive part */
+
+
+/* @media screen and (min-width: 425px) and (max-width: 576px) {
+
+} */
+
+@media screen and (max-width: 576px) {
+    .navbar-list,
+    .nav-item,
+    .btn-orange,
+    .navlogobarh1
+    {
+        display: none;
+    }
+    .navbar{
+        margin: 1rem 3rem;
+        gap: 1.5rem;
+        border-bottom: 2px solid #FEA301;
+    }
+
+    .menu {
+        display: block; 
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-logo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .navlogobarh1 {
+        font-size: 1.5rem;
+    }
+
+    .banner{
+        margin: 1rem 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+    .black-btn{
+        margin-top: 1.5rem;
+    }
+
+    .sectiondiv,
+    .container-1-data-table{
+        display: flex;
+        flex-direction: column;
+        margin: auto auto;
+    }
+    .box1spec{
+        display:none;
+    }
+
+    .box{ 
+        align-items: start;
+        margin: 1.5rem 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f2fr {
+       margin: 1.5rem 50rem;
+    }
+    .stories {
+        text-align: center; 
+    }
+    .foot-con{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .fot-1, p{
+        padding-top: 1rem;
+    }
+    .foot{
+        padding: none;
+    }
 }
