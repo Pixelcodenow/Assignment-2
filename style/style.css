@@ -76,6 +76,14 @@
 .menu{
     display: none;
 }
+
+.marque{
+    background-color: #5D58EF;
+    color: white;
+    height: 3rem;
+    text-decoration: solid;
+    padding-top: 1rem;
+}
 /* banner style  */
 .banner{
     justify-content: space-between;
@@ -104,7 +112,6 @@
 /* main tag styles  */
 
                         /* section 1 */
-
 
 .sectiion-1{
     /* gap: 60px; */
@@ -168,7 +175,6 @@
     font-size: 24px;
 }
 
-
 /* section 2 styles */
 .section-2{
     background:linear-gradient(#FEA301,#ffffff)
@@ -203,7 +209,12 @@
     gap: 20px;
     padding-bottom: 60px;
 }
-
+/* .stories, img{
+    width: 100%;
+} */
+ .img-wid{
+    width: 100%;
+ }
 .stories{
     display: flex;
     justify-content: center;
@@ -218,6 +229,11 @@
     background-color:#3CD8E8;
     padding: 15px 20px;
     border-radius: 47px;
+    position: relative;
+    top: -1.75rem;
+    right: 2rem;
+
+
 }
 .stories h3{
     font-weight: bold;
@@ -352,20 +368,27 @@
     }
 
     .box{ 
-        align-items: start;
-        margin: 1.5rem 7rem;
+        /* margin: 1.5rem 7rem; */
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        /* padding-right: 20%; */
+        /* padding-left: 20%; */
     }
     .f2fr {
-       margin: 1.5rem 50rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* padding-right: 20%; */
+        /* padding-left: 20%; */
+        /* height: -565px; */
+        /* width: 360px; */
     }
     .stories {
         text-align: center; 
     }
     .foot-con{
-        
+
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -375,5 +398,31 @@
     }
     .foot{
         padding: none;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+
+    .btn-orang{
+        display: none;
+    }
+    .banner{
+        margin: 2rem;
+
+    }
+    .banner-pic{
+        /* margin-right: 5rem; */
+    }
+    .box{
+        width: 100%;
+        align-items: center;
+        margin: 2rem 2rem;
+    }
+    .f1fr{
+        
+    }
+    .f2fr{
+        margin-right: 50px;
+        /* grid-template-columns: repeat(3, 1fr); */
     }
 }
